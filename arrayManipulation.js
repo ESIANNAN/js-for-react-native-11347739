@@ -43,3 +43,15 @@ console.log(`Tripled odd numbers:`,Math.pow(g,3))
 console.log(`Tripled odd numbers:`,Math.pow(h,3))
 console.log(`Tripled odd numbers:`,Math.pow(i,3))
 console.log(`Tripled odd numbers:`,Math.pow(j,3))
+
+
+//Task 2
+ let formatArrayStrings = (strArray=[],
+processedNums = []) => {
+    processedNums =
+processArray(processedNums);
+    return strArray.map((str,i) => {
+        return processedNums[i] % 2 === 0?
+    str.toUpperCase() : str.toLowerCase();
+    })
+}
